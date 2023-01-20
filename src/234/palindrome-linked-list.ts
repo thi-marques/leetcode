@@ -1,10 +1,6 @@
 import { arrayToListNode, ListNode } from '../helpers/listNode'
 
-/**
- * @param {ListNode} head
- * @return {boolean}
- */
-export function isPalindrome(head) {
+export function isPalindrome(head: ListNode): boolean {
 	const array = [head.val]
 	while (head.next) {
 		head = head.next
@@ -22,11 +18,9 @@ export function isPalindrome(head) {
 
 /**
  * Fastest solution without using array
- * 
  * See full explanation on: {@link https://leetcode.com/problems/palindrome-linked-list/solutions/1137027/js-python-java-c-easy-floyd-s-reversal-solution-w-explanation/ LeetCode}
- * @param {ListNode} head 
  */
-// export function isPalindrome(head) {
+// export function isPalindrome(head: ListNode): boolean {
 // 	let slow = head,
 // 		fast = head,
 // 		prev,

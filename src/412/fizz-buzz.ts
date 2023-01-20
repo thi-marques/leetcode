@@ -1,8 +1,4 @@
-/**
- * @param {number} i
- * @return {string[]}
- */
-export function fizzBuzz(n) {
+export function fizzBuzz(n: number): string[] {
 	const result = []
 	let i = 1
 	while (i <= n) {
